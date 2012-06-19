@@ -176,7 +176,8 @@ module Integrity
     end
 
     post "/:project/builds" do
-      login_required
+      # Needs to investigate how to login using callback
+      #login_required 
 
       @build = current_project.build_head
       redirect build_url(@build).to_s

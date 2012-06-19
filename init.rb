@@ -7,6 +7,7 @@ rescue LoadError
 end
 
 require "integrity"
+require "integrity/notifier/email"
 
 # Uncomment as appropriate for the notifier you want to use
 # = Email
